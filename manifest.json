@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "IEEE Xplore Unlocker",
-  "description": "Take back control over research papers",
+  "description": "A browser extension to get locked content from ieee xplore using sci-hub",
   "version": "1.0",
   "browser_action": {
     "default_icon": "scihub.jpg"
