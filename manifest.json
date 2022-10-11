@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "IEEE Liberator",
+  "name": "IEEE Xplore Unlocker",
   "description": "Take back control over research papers",
   "version": "1.0",
   "browser_action": {
@@ -15,13 +15,5 @@
         "extension.js"
       ]
     }
-  ],
-  "background": {
-    "scripts": [
-      "background.js"
-    ]
-  },
-  "permissions": [
-    "activeTab"
   ]
 }
