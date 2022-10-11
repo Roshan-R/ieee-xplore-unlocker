@@ -9,9 +9,13 @@ if (scihub_btn) {
   scihub_btn.remove()
 }
 
-container.innerHTML +=
+let parser = new DOMParser();
+let btn = parser.parseFromString(
   `
   <div id="sci-hub" class="layout-btn-white cite-this-btn">
     <a href="https://sci-hub.se/${doi}" target='#' class="button">Search on Scihub</a>
   </div>
-`
+  `
+  , 'text/html').body.childNodes[0]
+
+container.appendChild(btn);
