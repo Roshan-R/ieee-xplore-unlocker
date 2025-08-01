@@ -6,16 +6,16 @@ let scihub_url = `https://sci-hub.se/${doi}`
 
 let scihub_btn = document.querySelector("#sci-hub")
 if (scihub_btn) {
-  scihub_btn.remove()
+    scihub_btn.remove()
 }
 
 let parser = new DOMParser();
 let btn = parser.parseFromString(
-  `
-  <div id="sci-hub" class="layout-btn-white cite-this-btn">
+    `
+  <div id="sci-hub" class="xpl-btn-secondary">
     <a href="https://sci-hub.se/${doi}" target='#' class="button">Search on Scihub</a>
   </div>
   `
-  , 'text/html').body.childNodes[0]
+    , 'text/html').body.childNodes[0]
 
 container.appendChild(btn);
