@@ -3,7 +3,7 @@
   "name": "IEEE Xplore Unlocker",
   "description": "A browser extension to get locked content from ieee xplore using sci-hub",
   "version": "1.0",
-  "browser_action": {
+  "action": {
     "default_icon": "scihub.jpg"
   },
   "icons": {
